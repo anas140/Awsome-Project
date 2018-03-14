@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { Text, Image } from 'react-native';
 
-export default class HelloWorldApp extends Component {
+/**
+ * bult in prop source
+ */
+export default class Bananas extends Component {
   render() {
+    let pic = {
+      uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
+    }
     return(
-      <Text>Hello World</Text>
-    );
+      <Image source={pic} style={{width: 355, height:200}}></Image>
+    )
   }
 }
